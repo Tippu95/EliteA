@@ -1,0 +1,21 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result
+TC_01,Verify age category for age less than 12,"1. Open 'Clinical_Data_Validation_Cohort.xlsx' file.
+2. Find a patient with age less than 12.
+3. Check the corresponding 'Patient ID' in 'age_category_data.csv'.
+4. Verify the 'Age Category' field.",The 'Age Category' field should be 'Childhood'.
+TC_02,Verify age category for age between 12 and 20,"1. Open 'Clinical_Data_Validation_Cohort.xlsx' file.
+2. Find a patient with age between 12 and 20.
+3. Check the corresponding 'Patient ID' in 'age_category_data.csv'.
+4. Verify the 'Age Category' field.",The 'Age Category' field should be 'Teenage'.
+TC_03,Verify age category for age between 21 and 60,"1. Open 'Clinical_Data_Validation_Cohort.xlsx' file.
+2. Find a patient with age between 21 and 60.
+3. Check the corresponding 'Patient ID' in 'age_category_data.csv'.
+4. Verify the 'Age Category' field.",The 'Age Category' field should be 'Adult'.
+TC_04,Verify age category for age above 60,"1. Open 'Clinical_Data_Validation_Cohort.xlsx' file.
+2. Find a patient with age above 60.
+3. Check the corresponding 'Patient ID' in 'age_category_data.csv'.
+4. Verify the 'Age Category' field.",The 'Age Category' field should be 'Old'.
+TC_05,Verify mapping of 'Patient ID' between files,"1. Open 'Clinical_Data_Validation_Cohort.xlsx' file.
+2. Note down a 'Patient ID'.
+3. Open 'age_category_data.csv' file.
+4. Verify the presence of the same 'Patient ID'.",The 'Patient ID' should be present in both files.
