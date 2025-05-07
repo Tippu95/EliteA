@@ -2,7 +2,7 @@ import pytest
 import pandas as pd
 
 # Load the data
-data = pd.read_csv('../Verify/age_category_data.csv')
+data = pd.read_csv('demo/Verify/age_category_data.csv')
 
 # Test cases
 test_cases = [
@@ -19,7 +19,7 @@ def test_age_category(age, expected_category):
         result = data[data['age'] == age]['age_category'].values[0]
     else:
         result = data[data['age'].isnull()]['age_category'].values[0]
-    assert result == expected_category, f"Expected {expected_category}, but got {result}"
+    assert result == expected_category
 
 if __name__ == "__main__":
     pytest.main()
