@@ -1,0 +1,15 @@
+Test Case ID,Title,Description,Preconditions,Test Steps,Expected Result
+TC_01,Verify Age Category for Childhood,Verify that the age category is correctly calculated as "Childhood" for ages less than 12,Patient age is less than 12,"1. Retrieve the age of the patient from "Clinical_Data_Validation_Cohort.xlsx".
+2. Map the patient ID to "age_category_data.csv".
+3. Check the "Age Category" field.",The "Age Category" field should be "Childhood".
+TC_02,Verify Age Category for Teenage,Verify that the age category is correctly calculated as "Teenage" for ages between 12 and 20,Patient age is between 12 and 20,"1. Retrieve the age of the patient from "Clinical_Data_Validation_Cohort.xlsx".
+2. Map the patient ID to "age_category_data.csv".
+3. Check the "Age Category" field.",The "Age Category" field should be "Teenage".
+TC_03,Verify Age Category for Adult,Verify that the age category is correctly calculated as "Adult" for ages between 21 and 60,Patient age is between 21 and 60,"1. Retrieve the age of the patient from "Clinical_Data_Validation_Cohort.xlsx".
+2. Map the patient ID to "age_category_data.csv".
+3. Check the "Age Category" field.",The "Age Category" field should be "Adult".
+TC_04,Verify Age Category for Old,Verify that the age category is correctly calculated as "Old" for ages above 60,Patient age is above 60,"1. Retrieve the age of the patient from "Clinical_Data_Validation_Cohort.xlsx".
+2. Map the patient ID to "age_category_data.csv".
+3. Check the "Age Category" field.",The "Age Category" field should be "Old".
+TC_05,Verify Age Category Field Presence,Verify that the "Age Category" field is present in "age_category_data.csv",None,"1. Open "age_category_data.csv".
+2. Check for the presence of the "Age Category" field.",The "Age Category" field should be present.
