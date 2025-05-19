@@ -1,0 +1,19 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status
+TC_01,Verify Age Category for age less than 12,"1. Open Clinical_Data_Validation_Cohort.xlsx file
+2. Check age for Patient ID
+3. Verify Age Category in age_category_data.csv file",Age Category should be "Childhood",,
+TC_02,Verify Age Category for age between 12 and 20,"1. Open Clinical_Data_Validation_Cohort.xlsx file
+2. Check age for Patient ID
+3. Verify Age Category in age_category_data.csv file",Age Category should be "Teenage",,
+TC_03,Verify Age Category for age between 21 and 60,"1. Open Clinical_Data_Validation_Cohort.xlsx file
+2. Check age for Patient ID
+3. Verify Age Category in age_category_data.csv file",Age Category should be "Adult",,
+TC_04,Verify Age Category for age above 60,"1. Open Clinical_Data_Validation_Cohort.xlsx file
+2. Check age for Patient ID
+3. Verify Age Category in age_category_data.csv file",Age Category should be "Old",,
+TC_05,Verify Age Category for invalid age data,"1. Open Clinical_Data_Validation_Cohort.xlsx file
+2. Check age for Patient ID
+3. Verify Age Category in age_category_data.csv file",Age Category should be empty or error message,,
+TC_06,Verify Age Category mapping based on Patient ID,"1. Open Clinical_Data_Validation_Cohort.xlsx file
+2. Check Patient ID
+3. Verify Age Category in age_category_data.csv file",Age Category should match based on Patient ID,,
